@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email       = ["pederbl@jobstar.se"]
   s.homepage    = "http://rubygems.org/gems/job_listing_json_models"
   s.summary     = %q{Summary}
-  s.description = %q{TODO: Write a gem description}
+  s.description = %q{rite a gem description}
 
   s.rubyforge_project = "job_listing_json_models"
 
