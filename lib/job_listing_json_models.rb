@@ -1,9 +1,9 @@
 
-Dir[File.join(File.dirname(__FILE__), 'job_listing_data_models', '*.rb')].each do |model|
+Dir[File.join(File.dirname(__FILE__), 'job_listing_json_models', '*.rb')].each do |model|
   require model
 end
 
-autoload :PublishDateValidator, "job_listing_data_models/validators/publish_date_validator"
+autoload :PublishDateValidator, "job_listing_json_models/validators/publish_date_validator"
 
 module JobListingJsonModels
 

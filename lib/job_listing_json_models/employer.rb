@@ -1,6 +1,6 @@
 module JobListingJsonModel
 
-  class Base::Employer
+  class Employer
     include ActiveModel::Validations
     include ActiveModel::Conversion
     extend  ActiveModel::Naming

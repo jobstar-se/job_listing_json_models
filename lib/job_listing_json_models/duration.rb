@@ -1,6 +1,6 @@
 module JobListingJsonModel
 
-  class Base::Duration
+  class Duration
     include JsonModel
     include ActiveModel::Validations
     include ActiveModel::Conversion  
