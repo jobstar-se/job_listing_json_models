@@ -52,9 +52,9 @@ module JobListingJsonModels
     attribute :co_founder, Boolean     # Is the listed position for a co-founder of a business.
     attribute :contractor, Boolean     # False if the position offers employment. True if the position is for a contractor.
     
-    has_many :locations                          # An array with work place locations.
-    has_many :categories                         # An array with work categories that match the listed position.
-    has_many :contacts                           # An array with contact information.
+    has_many :locations, :class => Location                          # An array with work place locations.
+    has_many :categories, :class => Category                         # An array with work categories that match the listed position.
+    has_many :contacts, :class => Contact                           # An array with contact information.
     has_many :union_contacts, :class => Contact  # An array with contact information to union representatives.
     
     # validations
