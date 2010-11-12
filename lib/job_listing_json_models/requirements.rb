@@ -1,6 +1,6 @@
 module JobListingJsonModel
   
-  class Requirements
+  class Base::Requirements
     include ActiveModel::Validations
     include ActiveModel::Conversion
     extend  ActiveModel::Naming
