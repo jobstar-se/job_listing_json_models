@@ -1,3 +1,6 @@
+require 'job_listing_json_models/drivers_license'
+require 'job_listing_json_models/experience'
+require 'job_listing_json_models/education'
 
 Dir[File.join(File.dirname(__FILE__), 'job_listing_json_models', '*.rb')].each do |model|
   require model
