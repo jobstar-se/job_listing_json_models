@@ -1,4 +1,4 @@
-module JobListingJsonModel
+module JobListingJsonModels
 
   class DriversLicense
     include ActiveModel::Validations

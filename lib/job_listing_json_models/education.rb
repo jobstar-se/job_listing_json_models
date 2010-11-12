@@ -1,4 +1,4 @@
-module JobListingJsonModel
+module JobListingJsonModels
 
   class Education
     include JsonModel

@@ -1,4 +1,4 @@
-module JobListingJsonModel
+module JobListingJsonModels
 
   class Listing < ActiveRecord::Base
     def base

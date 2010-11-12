@@ -1,4 +1,4 @@
-module JobListingJsonModel
+module JobListingJsonModels
   
   class Salary
     include JsonModel

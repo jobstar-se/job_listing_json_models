@@ -1,4 +1,4 @@
-module JobListingJsonModel
+module JobListingJsonModels
 
   class Duration
     include JsonModel

@@ -1,4 +1,4 @@
-module JobListingJsonModel
+module JobListingJsonModels
 
   # Specifies the work experience requirements that applicants should fulfil.
   class Experience
