@@ -14,6 +14,7 @@ module JobListingJsonModels
     attribute :city,    String # Temporary hack until we have location mapping for all sources
     attribute :region,  String 
     attribute :country, String
+    attribute :at_home, Boolean
   end
 
 end
