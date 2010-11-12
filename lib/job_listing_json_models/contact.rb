@@ -1,4 +1,4 @@
-module JobListingJsonModule
+module JobListingJsonModels
 
   class Contact
     include JsonModel
