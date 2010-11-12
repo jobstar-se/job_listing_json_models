@@ -17,12 +17,9 @@ module JobListingJsonModels
     DE    = 128
     TAXI  = 256
 
-    attribute :types, Bitfield # A bitmap representing the drivers licenses that should be held by the applicants.
-    attribute :text,  String   # An additional description of the required licenses.
+    attribute :types, Bitfield, :default => 0   # A bitmap representing the drivers licenses that should be held by the applicants.
+    attribute :text,  String                    # An additional description of the required licenses.
   
-    def has_type?(type)
-      types & type == type
-    end
   end
 
 end

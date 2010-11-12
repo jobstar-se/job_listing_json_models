@@ -38,14 +38,14 @@ module JobListingJsonModels
     attribute :body,       String     # The main text which may include job description, company description, and requirement description.
     
     attribute :employer,     Employer
-    attribute :requirements, Requirements
+    attribute :requirements, Requirements, :default => Requirements.new
     attribute :worktime,     Worktime
     attribute :duration,     Duration
     attribute :salary,       Salary
     attribute :application,  Application
     
-    attribute :seasons,       Bitfield # A bitmap representing which seasons a seasonal position is needed.
-    attribute :num_positions, Integer  # The number of positions that need to be filled.
+    attribute :seasons,       Bitfield, :default => 0   # A bitmap representing which seasons a seasonal position is needed.
+    attribute :num_positions, Integer, :default => 1    # The number of positions that need to be filled.
     
     attribute :keywords,  Array        # An array of keywords that represent the position.
     

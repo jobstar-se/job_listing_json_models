@@ -7,7 +7,7 @@ module JobListingJsonModels
     include JsonModel
     include JsonModel::ValidationHelper
   
-    attribute :drivers_license, DriversLicense
+    attribute :drivers_license, DriversLicense, :default => DriversLicence.new
     attribute :education,       Education
     attribute :experience,      Experience
   
