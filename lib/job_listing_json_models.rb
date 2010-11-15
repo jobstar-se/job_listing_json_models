@@ -30,7 +30,7 @@ module JobListingJsonModels
     attribute :publish_on,    TimeStamp
     attribute :publish_until, TimeStamp
     
-    attribute :source,              String     # The domain name of the source from which the job listing was fetched.
+    attribute :source,              Integer    # The id of the source from which the job listing was fetched.
     attribute :source_listing_id,   String     # The id by which the job listing is referenced at the source.
     attribute :source_url,          String     # The url of the job listing at the source.
     
