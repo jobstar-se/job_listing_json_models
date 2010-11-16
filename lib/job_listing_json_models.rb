@@ -69,16 +69,16 @@ module JobListingJsonModels
     validates :categories, :presence => true
 
     def initialize(attrs = {})
-      base = super(attrs)
+      super(attrs)
       
-      base.employer     ||= Employer.new
-      base.worktime     ||= Worktime.new
-      base.duration     ||= Duration.new
-      base.salary       ||= Salary.new
-      base.application  ||= Application.new
-      base.requirements ||= Requirements.new
+      employer     ||= Employer.new
+      worktime     ||= Worktime.new
+      duration     ||= Duration.new
+      salary       ||= Salary.new
+      application  ||= Application.new
+      requirements ||= Requirements.new
 
-      base
+      self
     end
 
     def humanize_dates

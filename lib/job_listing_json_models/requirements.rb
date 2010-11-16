@@ -17,13 +17,13 @@ module JobListingJsonModels
     validates :drivers_license, :presence => true
   
     def initialize(attrs = {})
-      requirements = super(attrs)
+      super(attrs)
 
-      requirements.drivers_license ||= DriversLicense.new
-      requirements.education       ||= Education.new
-      requirements.experience      ||= Experience.new      
+      drivers_license ||= DriversLicense.new
+      education       ||= Education.new
+      experience      ||= Experience.new      
 
-      requirements
+      self
     end
 
   end
