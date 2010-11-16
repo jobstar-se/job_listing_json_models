@@ -68,6 +68,19 @@ module JobListingJsonModels
     validates :locations, :presence => true
     validates :categories, :presence => true
 
+    def initialize(attrs = nil)
+      base = super(attrs)
+      
+      base.employer     ||= Employer.new
+      base.worktime     ||= Worktime.new
+      base.duration     ||= Duration.new
+      base.salary       ||= Salary.new
+      base.application  ||= Application.new
+      base.requirements ||= Requirements.new
+
+      base
+    end
+
     def humanize_dates
       self.first_day  = self.first_day  == 0 || self.first_day.nil?  ? "" : Time.at(self.first_day).strftime("%Y-%m-%d")
       self.publish_on = self.publish_on == 0 || self.publish_on.nil? ? "" : Time.at(self.publish_on).strftime("%Y-%m-%d")

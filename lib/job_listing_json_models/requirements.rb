@@ -15,6 +15,17 @@ module JobListingJsonModels
     attribute :misc,    String  # A description of the required work experience.
   
     validates :drivers_license, :presence => true
+  
+    def initialize(attrs = nil)
+      requirements = super(attrs)
+
+      requirements.drivers_license ||= DriversLicense.new
+      requirements.education       ||= Education.new
+      requirements.experience      ||= Experience.new      
+
+      requirements
+    end
+
   end
 
 end
