@@ -16,7 +16,7 @@ module JobListingJsonModels
   
     validates :drivers_license, :presence => true
   
-    def initialize(attrs = nil)
+    def initialize(attrs = {})
       requirements = super(attrs)
 
       requirements.drivers_license ||= DriversLicense.new

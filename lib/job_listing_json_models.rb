@@ -38,7 +38,7 @@ module JobListingJsonModels
     attribute :body,       String     # The main text which may include job description, company description, and requirement description.
     
     attribute :employer,     Employer
-    attribute :requirements, Requirements, :default => Requirements.new
+    attribute :requirements, Requirements #, :default => Requirements.new
     attribute :worktime,     Worktime
     attribute :duration,     Duration
     attribute :salary,       Salary
@@ -68,7 +68,7 @@ module JobListingJsonModels
     validates :locations, :presence => true
     validates :categories, :presence => true
 
-    def initialize(attrs = nil)
+    def initialize(attrs = {})
       base = super(attrs)
       
       base.employer     ||= Employer.new
