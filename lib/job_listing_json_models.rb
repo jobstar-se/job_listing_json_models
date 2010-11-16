@@ -71,12 +71,12 @@ module JobListingJsonModels
     def initialize(attrs = {})
       super(attrs)
       
-      employer     ||= Employer.new
-      worktime     ||= Worktime.new
-      duration     ||= Duration.new
-      salary       ||= Salary.new
-      application  ||= Application.new
-      requirements ||= Requirements.new
+      self.employer     ||= Employer.new
+      self.worktime     ||= Worktime.new
+      self.duration     ||= Duration.new
+      self.salary       ||= Salary.new
+      self.application  ||= Application.new
+      self.requirements ||= Requirements.new
 
       self
     end

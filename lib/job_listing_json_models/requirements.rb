@@ -19,9 +19,9 @@ module JobListingJsonModels
     def initialize(attrs = {})
       super(attrs)
 
-      drivers_license ||= DriversLicense.new
-      education       ||= Education.new
-      experience      ||= Experience.new      
+      self.drivers_license ||= DriversLicense.new
+      self.education       ||= Education.new
+      self.experience      ||= Experience.new      
 
       self
     end
