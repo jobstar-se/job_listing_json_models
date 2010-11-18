@@ -1,6 +1,7 @@
 module JobListingJsonModels
   
   class Location
+    include ActiveModel::Validations
     include JsonModel
     include JsonModel::ValidationHelper
     
