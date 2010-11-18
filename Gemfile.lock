@@ -1,16 +1,16 @@
 GIT
+  remote: git://github.com/alluniq/hash_converter.git
+  revision: 955920490744f281dc5f29ad641130d084a50915
+  specs:
+    hash_converter (0.0.2)
+      activesupport (>= 3.0.0)
+
+GIT
   remote: git://github.com/pch/json_model.git
   revision: 216cf90286c869003ac6836c3e5b5de39b1bd80d
   specs:
     json_model (0.0.3)
       activesupport (~> 3.0.0)
-
-GIT
-  remote: git://github.com/pederbl/hash_converter.git
-  revision: a3b44e3cc57035865d7babb933611914f4aac9c7
-  specs:
-    hash_converter (0.0.2)
-      activesupport (>= 3.0.0)
 
 PATH
   remote: .
