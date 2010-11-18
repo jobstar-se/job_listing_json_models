@@ -1,7 +1,9 @@
 module JobListingJsonModels
   class Migrator
     def self.migrate(json_hash, version)
-      Dir[File.join(Rails.root, 'app', 'models', 'listing_migrations', '*.rb')].each do |migration_file|
+      path = File.expand_path(File.dirname(__FILE__) + '/..')
+
+      Dir[File.join(path, 'job_listing_json_models', 'migrations', '*.rb')].each do |migration_file|
         require migration_file
 
         filename = File.basename(migration_file, ".rb")
