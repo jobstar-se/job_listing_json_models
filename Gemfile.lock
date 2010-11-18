@@ -5,6 +5,13 @@ GIT
     json_model (0.0.3)
       activesupport (~> 3.0.0)
 
+GIT
+  remote: git://github.com/pederbl/hash_converter.git
+  revision: a3b44e3cc57035865d7babb933611914f4aac9c7
+  specs:
+    hash_converter (0.0.2)
+      activesupport (>= 3.0.0)
+
 PATH
   remote: .
   specs:
@@ -23,7 +30,7 @@ GEM
       arel (~> 2.0.2)
       tzinfo (~> 0.3.23)
     activesupport (3.0.3)
-    arel (2.0.3)
+    arel (2.0.4)
     builder (2.1.2)
     diff-lcs (1.1.2)
     i18n (0.4.2)
@@ -46,6 +53,7 @@ DEPENDENCIES
   activemodel (~> 3.0.1)
   activerecord (~> 3.0.1)
   activesupport (~> 3.0.1)
+  hash_converter!
   job_listing_json_models!
   json_model!
   rspec (~> 2.0.1)
