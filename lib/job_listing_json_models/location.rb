@@ -2,6 +2,7 @@ module JobListingJsonModels
   
   class Location
     include JsonModel
+    include JsonModel::ValidationHelper
     
     COUNTRY   = 1
     REGION    = 2
