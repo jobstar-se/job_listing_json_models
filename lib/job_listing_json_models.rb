@@ -1,3 +1,5 @@
+require 'migrator/json_model'
+
 require 'job_listing_json_models/drivers_license'
 require 'job_listing_json_models/experience'
 require 'job_listing_json_models/education'
