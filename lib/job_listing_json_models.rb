@@ -10,8 +10,8 @@ autoload :PublishDateValidator, "job_listing_json_models/validators/publish_date
 
 module JobListingJsonModels
 
-  autoload :Version,  "migrations/version"
-  autoload :Migrator, "migrations/migrator"
+  autoload :Version,  "migrator/version"
+  autoload :Migrator, "migrator/migrator"
 
   class Base
     include ActiveModel::Validations
