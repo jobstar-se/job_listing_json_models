@@ -15,6 +15,8 @@ module JobListingJsonModels
   autoload :Version,  "migrator/version"
   autoload :Migrator, "migrator/migrator"
 
+  MIN_VERSION = 0
+
   class Base
     include ActiveModel::Validations
     include ActiveModel::Conversion
