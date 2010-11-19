@@ -15,4 +15,9 @@ describe JobListingJsonModels::Migrator do
     hash = JobListingJsonModels::Migrator.migrate({}, 1)
     hash.should == {:duration => {:starts_on => nil}}
   end
+
+  it "should return the latest migration number" do
+    number = JobListingJsonModels::Migrator.latest_version
+    number.should == 1
+  end
 end

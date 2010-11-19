@@ -22,5 +22,17 @@ module JobListingJsonModels
 
       json_hash
     end
+
+    def self.latest_version
+      unless @latest_version
+        path      = File.expand_path(File.dirname(__FILE__) + '/..')
+        last_file = Dir[File.join(path, 'job_listing_json_models', 'migrations', '*.rb')].last
+        filename  = File.basename(last_file, ".rb").split(/^([0-9])+_/)
+
+        @latest_version = filename[1].to_i
+      end
+
+      @latest_version
+    end
   end
 end
