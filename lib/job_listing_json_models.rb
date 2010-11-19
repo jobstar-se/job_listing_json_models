@@ -28,6 +28,8 @@ module JobListingJsonModels
     WINTER = 4
     SPRING = 8
 
+    versioned
+
     attribute :id,            String     # The unique identifier of the job listing. This value is assigned by JobStar.se. It is null if not yet assigned.
     attribute :posted_at,     TimeStamp  # Time at which the job listing was posted on the source.
     attribute :updated_at,    TimeStamp  # Time at which the job listing was updated at the source.
