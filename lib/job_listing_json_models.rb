@@ -74,7 +74,7 @@ module JobListingJsonModels
     validates :source, :presence => true
     #validates :source_listing_id, :presence => true
     validates :title, :presence => true
-    validates :body, :presence => true
+    #validates :body, :presence => true
     validates :num_positions, :presence => true, :numericality => { :greater_than => 0 }
     validates :locations, :presence => true
     validates :categories, :presence => true
